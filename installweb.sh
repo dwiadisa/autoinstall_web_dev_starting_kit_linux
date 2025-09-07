@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script Auto Install All-in-One untuk Developer
-# Created by: @YourChannelName
+
 
 echo -e "\033[1;36m"
 echo "╔══════════════════════════════════════════════════╗"
