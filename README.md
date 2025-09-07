@@ -79,4 +79,4 @@ After the script completes, you can access the following:
 
 ## Credits
 
-Created by: @YourChannelName
+Created by: adisamedia
