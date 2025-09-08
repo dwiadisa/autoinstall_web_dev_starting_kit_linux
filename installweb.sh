@@ -79,25 +79,25 @@ sed -i 's/memory_limit = .*/memory_limit = 256M/' /etc/php/*/apache2/php.ini
 sed -i 's/upload_max_filesize = .*/upload_max_filesize = 64M/' /etc/php/*/apache2/php.ini
 sed -i 's/post_max_size = .*/post_max_size = 64M/' /etc/php/*/apache2/php.ini
 
-# Create test PHP file
-echo "<?php 
-echo '<!DOCTYPE html><html><head><title>Installation Success</title><style>body{font-family:Arial,sans-serif;background:#f0f0f0;margin:0;padding:20px;}";
-echo ".card{background:white;border-radius:10px;padding:20px;margin:20px auto;max-width:600px;box-shadow:0 4px 8px rgba(0,0,0,0.1);}";
-echo "h1{color:#4CAF50;}ul{list-style-type:none;padding:0;}li{padding:8px;background:#f9f9f9;margin-bottom:5px;border-radius:5px;}";
-echo ".success{color:#4CAF50;font-weight:bold;}</style></head><body>';";
-echo "'<div class=\"card\"><h1>✅ Installation Successful!</h1><p>Your development environment is ready:</p><ul>';";
-echo "'<li>Apache Web Server <span class=\"success\">✓</span></li>';";
-echo "'<li>MySQL Database <span class=\"success\">✓</span></li>';";
-echo "'<li>PHP <span class=\"success\">✓</span></li>';";
-echo "'<li>phpMyAdmin <span class=\"success\">✓</span></li>';";
-echo "'<li>VS Code <span class=\"success\">✓</span></li>';";
-echo "'<li>Git <span class=\"success\">✓</span></li>';";
-echo "'<li>Composer <span class=\"success\">✓</span></li>';";
-echo "'</ul><p>You can now start developing your projects!</p>';";
-echo "'<p><strong>MySQL Root Password:</strong> root</p>';";
-echo "'<p><strong>phpMyAdmin:</strong> <a href=\"/phpmyadmin\">http://localhost/phpmyadmin</a></p>';";
-echo "'</div></body></html>';"
-?>" > /var/www/html/index.php
+# # Create test PHP file
+# echo "<?php 
+# echo '<!DOCTYPE html><html><head><title>Installation Success</title><style>body{font-family:Arial,sans-serif;background:#f0f0f0;margin:0;padding:20px;}";
+# echo ".card{background:white;border-radius:10px;padding:20px;margin:20px auto;max-width:600px;box-shadow:0 4px 8px rgba(0,0,0,0.1);}";
+# echo "h1{color:#4CAF50;}ul{list-style-type:none;padding:0;}li{padding:8px;background:#f9f9f9;margin-bottom:5px;border-radius:5px;}";
+# echo ".success{color:#4CAF50;font-weight:bold;}</style></head><body>';";
+# echo "'<div class=\"card\"><h1>✅ Installation Successful!</h1><p>Your development environment is ready:</p><ul>';";
+# echo "'<li>Apache Web Server <span class=\"success\">✓</span></li>';";
+# echo "'<li>MySQL Database <span class=\"success\">✓</span></li>';";
+# echo "'<li>PHP <span class=\"success\">✓</span></li>';";
+# echo "'<li>phpMyAdmin <span class=\"success\">✓</span></li>';";
+# echo "'<li>VS Code <span class=\"success\">✓</span></li>';";
+# echo "'<li>Git <span class=\"success\">✓</span></li>';";
+# echo "'<li>Composer <span class=\"success\">✓</span></li>';";
+# echo "'</ul><p>You can now start developing your projects!</p>';";
+# echo "'<p><strong>MySQL Root Password:</strong> root</p>';";
+# echo "'<p><strong>phpMyAdmin:</strong> <a href=\"/phpmyadmin\">http://localhost/phpmyadmin</a></p>';";
+# echo "'</div></body></html>';"
+# ?>" > /var/www/html/index.php
 
 systemctl restart apache2
 
